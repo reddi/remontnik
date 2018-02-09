@@ -17,7 +17,6 @@ def find_close(target_lat, target_lon, max_dist):
     Returns:
         List of tuples with callsign, latitude and longitude of vehicles.
     """
-
     resp = requests.get(OPENSKY_URL, timeout=5)
     assert resp.status_code == 200
 
