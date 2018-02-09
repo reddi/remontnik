@@ -5,6 +5,8 @@ EARTH_RADIUS = 6372795
 
 
 def distance(lat1, lon1, lat2, lon2):
+    """Calculate distance between two points using Haversine formula."""
+
     m = math.pi / 180
     lat1 *= m
     lat2 *= m
