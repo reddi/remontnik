@@ -28,6 +28,6 @@ def find_close(target_lat, target_lon, max_dist):
     for state in states:
         callsign, lon, lat = state[1], state[5], state[6]
         if (lon is not None and lat is not None and
-            distance(lat, lon, target_lat, target_lon) <= max_dist):
+                distance(lat, lon, target_lat, target_lon) <= max_dist):
             result.append((callsign, lon, lat))
     return result
